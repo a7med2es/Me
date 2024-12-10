@@ -120,8 +120,6 @@ nav a.active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 600px;
-    margin: 0;
 }
 
 .iframe iframe {
@@ -152,6 +150,11 @@ nav a.active {
     }
 }
 
+@media(max-width:995px) {
+    .home {
+        flex-direction: column;
+        margin: 0rem 0rem; 
+    }
 
 @media (max-width:530px){
     .icone {
@@ -160,8 +163,3 @@ nav a.active {
     
 }
 
-@media(max-width:995px) {
-    .home {
-        flex-direction: column;
-        margin: 0rem 0rem; 
-    }
