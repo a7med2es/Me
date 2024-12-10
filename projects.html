@@ -1,85 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <script src="main.js"></script>
-    <title>projects</title>
-    <link rel="shortcut icon" href="a7med.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="style.projects.css">
-
- 
-</head>
-
-<body>
-    <header>
-        <a href="contact.html" class="logo">𝖆7𝖒𝖊𝖉</a>
-
-        <nav>
-            <a href="index.html"> Home</a>
-            <a href="projects.html" class="active">Projects</a>
-            <a href="About.html">About</a>
-
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-
-    <div class="sidebarcontainer">
-
-        <div class="active_open">
-            <button id="mainopen" class="mainopen" onclick="toggleNav()">&#9776;</button>
-        </div>
-
-        <div class="sidebar" id="sidebar">
-            <ul class="nav_open">
-                <li> <a href="index.html"> Home</a></li>
-                <li> <a href="projects.html">Projects</a></li>
-                <li> <a href="About.html" class="active">About</a></li>
-                <li> <a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-
-    </div>
-
-    <section class="home">
-
-        <div class="home-projects ">
-
-            <h1> <i class="fa-solid fa-i-cursor"></i> my projects <i class="fa-solid fa-i-cursor"></i></h1>
-
-        </div>
-
-        <div class="icone">
-            <div class="all">
-                <div><i class="fa-brands fa-css3 css"></i></div>
-                <div><i class="fa-brands fa-html5 html"></i></div>
-                <div><i class="fa-brands fa-js  javascript"></i></div>
-            </div>
-            
-        </div>
-
-    </section>
-
-    <div class="iframe" id="animateMe">
-        <iframe src="text.html" frameborder="0"></iframe>
-       <!-- <iframe src="text.html" frameborder="0"></iframe>
-        <iframe src="text.html" frameborder="0"></iframe>
-        <iframe src="text.html" frameborder="0"></iframe>-->
-    </div>
+body{
+    background-color: rgb(0, 0, 0);
+}
+.home{
+    background-image: url(X2zDF5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100ch;
+    border-bottom: 1px black solid;
+}
 
 
-  
+nav a {
+    font-size: 1.8rem;
+    color: var(--background);
+    margin-left: 4rem;
+    font-weight: 500;
+    transition: 0.3s ease;
+    border-bottom: 3px solid transparent;
+}
+
+nav a:hover,
+nav a.active {
+    color: rgb(255, 179, 0);
+    border-bottom: 3px solid rgb(255, 179, 0);
+}
+.logo {
+    color: var(--background);
+}
+
+.logo:hover{
+    transform: scale(1.2);
+    color: rgb(255, 179, 0);
+}
 
 
-    <footer>
-        <a href="https://www.youtube.com/watch?v=be12BC5pQLE" style="color: white;"><i class="fas fa-copyright"> by a7med</i></a>
-    </footer>
-</body>
 
-</html>
+
+.home-projects {
+    color: var(--background);
+    font-weight: 900;
+    text-transform: capitalize;
+    font-size: 20px;
+    position: absolute;
+    top: 100px;
+    word-spacing: 3px;
+    animation: infinite 10s projects-h1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+@keyframes projects-h1 {
+    0% {
+        letter-spacing: 5px;
+    }
+
+    50% {
+        letter-spacing: 2px;
+    }
+
+    100% {
+        letter-spacing: 5px;
+    }
+
+}
+
+.icone {
+    position: relative;
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin-top: -160px;
+    background-color: #000000b5;
+    padding: 0 10px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px black;
+}
+
+.javascript {
+    margin: 0 90px;
+    color: yellow;
+}
+
+.css {
+    margin: 0 90px;
+    color: blue;
+}
+
+.html {
+    margin: 0 90px;
+    color: orange;
+}
+
+.all {
+    display: flex;
+    animation: icone linear 6s infinite;
+}
+
+@keyframes icone {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(200%);
+
+    }
+
+}
+
+.iframe {
+    margin-top: -300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.iframe iframe {
+    border-radius: 10px;
+    background-color: black;
+    width: 50%;
+    height: 500px;
+    margin-bottom: 10px;
+    border: 2px rgb(255, 255, 255) outset;
+    box-shadow: 0 0 15px rgb(255, 255, 255);
+    margin-top: 20px;
+    animation:initale 1s ease-out forwards;
+}
+.mainopen {
+
+    color: var(--background);
+
+}
+@keyframes initale {
+    0% {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+
+@media (max-width:530px){
+    .icone {
+        width: 100%;
+    }
+    
+}
