@@ -3,7 +3,6 @@
 body{
     background-color: rgb(0, 0, 0);
 }
-
 .home{
     background-image: url(X2zDF5.jpg);
     background-position: center;
@@ -125,7 +124,7 @@ nav a.active {
 .iframe iframe {
     border-radius: 10px;
     background-color: black;
-    width: 50%;
+    width: 80%;
     height: 500px;
     margin-bottom: 10px;
     border: 2px rgb(255, 255, 255) outset;
@@ -150,11 +149,6 @@ nav a.active {
     }
 }
 
-@media(max-width:995px) {
-    .home {
-        flex-direction: column;
-        margin: 0rem 0rem; 
-    }
 
 @media (max-width:530px){
     .icone {
@@ -162,4 +156,9 @@ nav a.active {
     }
     
 }
-
+@media(max-width:995px) {
+    .home {
+        flex-direction: column;
+        margin: 0rem 0rem; 
+    }
+}
