@@ -9,8 +9,8 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     height: 100ch;
+    width: 100%;
     border-bottom: 1px black solid;
-    margin: 0rem 0rem; 
 }
 
 
