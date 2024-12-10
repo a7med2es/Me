@@ -124,7 +124,7 @@ nav a.active {
 .iframe iframe {
     border-radius: 10px;
     background-color: black;
-    width: 50%;
+    width: 80%;
     height: 500px;
     margin-bottom: 10px;
     border: 2px rgb(255, 255, 255) outset;
