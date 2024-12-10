@@ -3,6 +3,7 @@
 body{
     background-color: rgb(0, 0, 0);
 }
+
 .home{
     background-image: url(X2zDF5.jpg);
     background-position: center;
@@ -119,6 +120,7 @@ nav a.active {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 80%;
 }
 
 .iframe iframe {
@@ -156,3 +158,9 @@ nav a.active {
     }
     
 }
+
+@media(max-width:995px) {
+    .home {
+        flex-direction: column;
+        margin: 0rem 0rem; 
+    }
