@@ -139,13 +139,13 @@ nav a.active {
       font-style: normal;
       font-size: 22px;
       font-weight: bold;
-      color: #0ff; /* لون فيروزي فاقع */
+      color: rgb(255, 179, 0); /* لون فيروزي فاقع */
       background: rgba(0, 255, 255, 0.08);
       padding: 12px 24px;
       border-radius: 12px;
-      box-shadow: 0 0 12px rgba(0, 255, 255, 0.5),
-                  0 0 24px rgba(0, 255, 255, 0.3),
-                  inset 0 0 10px rgba(0, 255, 255, 0.2);
+      box-shadow: 0 0 12px rgba(255, 179, 0, 0.54),
+                  0 0 24px rgba(255, 179, 0, 0.54),
+                  inset 0 0 10px rgba(255, 179, 0, 0.54);
       transition: all 0.4s ease;
       position: relative;
       letter-spacing: 1px;
@@ -159,9 +159,9 @@ nav a.active {
     a.number-project:hover i {
       color: #fff;
       transform: scale(1.05);
-      box-shadow: 0 0 18px #00ffe7,
-                  0 0 30px #00ffe7,
-                  inset 0 0 14px #00ffe7;
+      box-shadow: 0 0 18px rgb(255, 179, 0),
+                  0 0 30px rgb(255, 179, 0),
+                  inset 0 0 14px rgb(255, 179, 0);
         }
 @keyframes initale {
     0% {
