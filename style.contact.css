@@ -148,17 +148,6 @@ body {
 }
 
 
-@media (max-width:600px) {
-
-    .home .home-content h3 {
-        font-size: 2rem;
-    }
-
-    .home-content p {
-        font-size: 1.4rem;
-    }
-
-}
 
 
 
